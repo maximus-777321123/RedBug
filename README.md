@@ -1,4 +1,5 @@
 <img width="488" height="419" alt="image" src="https://github.com/user-attachments/assets/bc0e58fb-254b-41fb-b21e-19318d053a0c" />
+
 чтобы сделать такое же вам нужно создать любой файл с таким содержимым:
 
 ```python

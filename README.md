@@ -47,17 +47,16 @@ def main():
     light = world.create_entity()
     world.add_component(light, Transform3D(x=5, y=8, z=5))
     world.add_component(light, Light(color=(1.0, 0.95, 0.8), intensity=1.5, ambient=0.3))
-    
-    # Божья коровка (красный жук!)
-    bug = world.create_entity()
+
+    cube = world.create_entity()
     world.add_component(bug, Transform3D(
         x=8, y=3, z=6,
         rot_y=random.uniform(0, 6.28)
     ))
-    world.add_component(bug, MeshRenderer(mesh_type="cube", color=HEX("#ffffff")))
-    world.add_component(bug, Rotator(speed_y=random.uniform(0.2, 0.5)))
+    world.add_component(cube, MeshRenderer(mesh_type="cube", color=HEX("#ffffff")))
+    world.add_component(cube, Rotator(speed_y=random.uniform(0.2, 0.5)))
     
-    # Запуск!
+    # Запуск
     engine.run(world)
 
 if __name__ == "__main__":
